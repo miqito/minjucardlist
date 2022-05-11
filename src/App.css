@@ -1,0 +1,62 @@
+.App {
+  background-color: #212121;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  min-width: 95vw;
+
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  ;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.justify-content-end {
+  justify-content: end;
+  align-items: end;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+button {
+  font-size: calc(10px + 2vmin);
+}
+
+.searchInput {
+  margin: 0.5rem;
+  max-width: 20rem;
+}
+
+.logo {
+  height: 2.5rem
+}
+
+.Offcanvas {
+  background-color: #212121;
+  color: #ffffff
+}
