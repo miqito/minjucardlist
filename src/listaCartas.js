@@ -734,7 +734,7 @@ var listaCartas = [
          raridade: 3,
          release: "07/05/2022",
          link: 'https://cdn.koreaverse.com/NMIXX/Original/Bae-3-V1.gif',
-         new: true
+         new: false
      },
      {
         id: 68, 
@@ -745,7 +745,7 @@ var listaCartas = [
          raridade: 3,
          release: "07/05/2022",
          link: 'https://cdn.koreaverse.com/NMIXX/Original/Haewon-3-V1.gif',
-         new: true
+         new: false
      },
      {
         id: 69, 
@@ -756,7 +756,7 @@ var listaCartas = [
          raridade: 3,
          release: "07/05/2022",
          link: 'https://cdn.koreaverse.com/NMIXX/Original/Jinni-3-V1.gif',
-         new: true
+         new: false
      },
      {
         id: 70, 
@@ -767,7 +767,7 @@ var listaCartas = [
          raridade: 3,
          release: "07/05/2022",
          link: 'https://cdn.koreaverse.com/NMIXX/Original/Jiwoo-3-V1.gif',
-         new: true
+         new: false
      },
      {
         id: 71, 
@@ -778,7 +778,7 @@ var listaCartas = [
          raridade: 3,
          release: "07/05/2022",
          link: 'https://cdn.koreaverse.com/NMIXX/Original/Kyujin-3-V1.gif',
-         new: true
+         new: false
      },
      {
         id: 72, 
@@ -789,7 +789,7 @@ var listaCartas = [
          raridade: 3,
          release: "07/05/2022",
          link: 'https://cdn.koreaverse.com/NMIXX/Original/Lily-3-V1.gif',
-         new: true
+         new: false
      },
      {
         id: 73, 
@@ -800,6 +800,127 @@ var listaCartas = [
          raridade: 3,
          release: "07/05/2022",
          link: 'https://cdn.koreaverse.com/NMIXX/Original/Sullyoon-3-V1.gif',
+         new: false
+     },
+     {
+        id: 74, 
+        code : 'HVAL2',
+         artista: "Alice",
+         grupo: "Hello Venus",
+         versao: 1,
+         raridade: 2,
+         release: "20/05/2022",
+         link: 'https://cdn.koreaverse.com/HelloVenus/Original/Alice-2-V1.png',
+         new: true
+     },
+     {
+        id: 75, 
+        code : 'HVLI2',
+         artista: "Lime",
+         grupo: "Hello Venus",
+         versao: 1,
+         raridade: 2,
+         release: "20/05/2022",
+         link: 'https://cdn.koreaverse.com/HelloVenus/Original/Lime-2-V1.png',
+         new: true
+     },
+     {
+        id: 76, 
+        code : 'HVNA2',
+         artista: "Nara",
+         grupo: "Hello Venus",
+         versao: 1,
+         raridade: 2,
+         release: "20/05/2022",
+         link: 'https://cdn.koreaverse.com/HelloVenus/Original/Nara-2-V1.png',
+         new: true
+     },
+     {
+        id: 77, 
+        code : 'HVSE2',
+         artista: "Seoyoungce",
+         grupo: "Hello Venus",
+         versao: 1,
+         raridade: 2,
+         release: "20/05/2022",
+         link: 'https://cdn.koreaverse.com/HelloVenus/Original/Seoyoung-2-V1.png',
+         new: true
+     },
+     {
+        id: 78, 
+        code : 'HVYE2',
+         artista: "Yeoreum",
+         grupo: "Hello Venus",
+         versao: 1,
+         raridade: 2,
+         release: "20/05/2022",
+         link: 'https://cdn.koreaverse.com/HelloVenus/Original/Yeoreum-2-V1.png',
+         new: true
+     },
+     {
+        id: 79, 
+        code : 'HVYO2',
+         artista: "Yooyoung",
+         grupo: "Hello Venus",
+         versao: 1,
+         raridade: 2,
+         release: "20/05/2022",
+         link: 'https://cdn.koreaverse.com/HelloVenus/Original/Yooyoung-2-V1.png',
+         new: true
+     },
+     {
+        id: 80, 
+        code : 'FICL',
+         artista: "Cao Lu",
+         grupo: "FIESTAR",
+         versao: 1,
+         raridade: 1,
+         release: "20/05/2022",
+         link: 'https://cdn.koreaverse.com/FIESTAR/Original/CaoLu-1-V1.png',
+         new: true
+     },
+     {
+        id: 81, 
+        code : 'FIFE',
+         artista: "Fei",
+         grupo: "FIESTAR",
+         versao: 1,
+         raridade: 1,
+         release: "20/05/2022",
+         link: 'https://cdn.koreaverse.com/FIESTAR/Original/Fei-1-V1.png',
+         new: true
+     },
+     {
+        id: 82, 
+        code : 'FIHY',
+         artista: "Hyemi",
+         grupo: "FIESTAR",
+         versao: 1,
+         raridade: 1,
+         release: "20/05/2022",
+         link: 'https://cdn.koreaverse.com/FIESTAR/Original/Hyemi-1-V1.png',
+         new: true
+     },
+     {
+        id: 83, 
+        code : 'FILI',
+         artista: "Linzy",
+         grupo: "FIESTAR",
+         versao: 1,
+         raridade: 1,
+         release: "20/05/2022",
+         link: 'https://cdn.koreaverse.com/FIESTAR/Original/Linzy-1-V1.png',
+         new: true
+     },
+     {
+        id: 84, 
+        code : 'FIYE',
+         artista: "Yezi",
+         grupo: "FIESTAR",
+         versao: 1,
+         raridade: 1,
+         release: "20/05/2022",
+         link: 'https://cdn.koreaverse.com/FIESTAR/Original/Yezi-1-V1.png',
          new: true
      },
 ]
