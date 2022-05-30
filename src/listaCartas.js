@@ -811,7 +811,7 @@ var listaCartas = [
          raridade: 2,
          release: "20/05/2022",
          link: 'https://cdn.koreaverse.com/HelloVenus/Original/Alice-2-V1.png',
-         new: true
+         new: false
      },
      {
         id: 75, 
@@ -822,7 +822,7 @@ var listaCartas = [
          raridade: 2,
          release: "20/05/2022",
          link: 'https://cdn.koreaverse.com/HelloVenus/Original/Lime-2-V1.png',
-         new: true
+         new: false
      },
      {
         id: 76, 
@@ -833,7 +833,7 @@ var listaCartas = [
          raridade: 2,
          release: "20/05/2022",
          link: 'https://cdn.koreaverse.com/HelloVenus/Original/Nara-2-V1.png',
-         new: true
+         new: false
      },
      {
         id: 77, 
@@ -844,7 +844,7 @@ var listaCartas = [
          raridade: 2,
          release: "20/05/2022",
          link: 'https://cdn.koreaverse.com/HelloVenus/Original/Seoyoung-2-V1.png',
-         new: true
+         new: false
      },
      {
         id: 78, 
@@ -855,7 +855,7 @@ var listaCartas = [
          raridade: 2,
          release: "20/05/2022",
          link: 'https://cdn.koreaverse.com/HelloVenus/Original/Yeoreum-2-V1.png',
-         new: true
+         new: false
      },
      {
         id: 79, 
@@ -866,7 +866,7 @@ var listaCartas = [
          raridade: 2,
          release: "20/05/2022",
          link: 'https://cdn.koreaverse.com/HelloVenus/Original/Yooyoung-2-V1.png',
-         new: true
+         new: false
      },
      {
         id: 80, 
@@ -877,7 +877,7 @@ var listaCartas = [
          raridade: 1,
          release: "20/05/2022",
          link: 'https://cdn.koreaverse.com/FIESTAR/Original/CaoLu-1-V1.png',
-         new: true
+         new: false
      },
      {
         id: 81, 
@@ -888,7 +888,7 @@ var listaCartas = [
          raridade: 1,
          release: "20/05/2022",
          link: 'https://cdn.koreaverse.com/FIESTAR/Original/Fei-1-V1.png',
-         new: true
+         new: false
      },
      {
         id: 82, 
@@ -899,7 +899,7 @@ var listaCartas = [
          raridade: 1,
          release: "20/05/2022",
          link: 'https://cdn.koreaverse.com/FIESTAR/Original/Hyemi-1-V1.png',
-         new: true
+         new: false
      },
      {
         id: 83, 
@@ -910,7 +910,7 @@ var listaCartas = [
          raridade: 1,
          release: "20/05/2022",
          link: 'https://cdn.koreaverse.com/FIESTAR/Original/Linzy-1-V1.png',
-         new: true
+         new: false
      },
      {
         id: 84, 
@@ -921,6 +921,17 @@ var listaCartas = [
          raridade: 1,
          release: "20/05/2022",
          link: 'https://cdn.koreaverse.com/FIESTAR/Original/Yezi-1-V1.png',
+         new: false
+     },
+     {
+        id: 84, 
+        code : 'SOKS2',
+         artista: "Kim Sejeong",
+         grupo: "Soloist",
+         versao: 1,
+         raridade: 2,
+         release: "29/05/2022",
+         link: 'https://cdn.koreaverse.com/Soloists/Original/KimSejeong-2-V1.png',
          new: true
      },
 ]
