@@ -30,6 +30,7 @@ function App() {
   const [inputGroup, setInputGroup] = useState('')
   const [inputArtist, setInputArtist] = useState('');
   const searchInput = useRef(null)
+  const [page, setPage] = useState(10)
 
 
   const [show, setShow] = useState(false);
@@ -71,35 +72,58 @@ function App() {
         </OffcanvasHeader>
         <OffcanvasBody className="Offcanvas">
               <DropdownButton className="searchInput" id="dropdown-basic-button" title={"Filter by Rarity: " + (star == 0 ? "All" : "⭐".repeat(star))}>
-                <DropdownItem onClick={(() => setStar(0))}>All</DropdownItem>
-                <DropdownItem onClick={(() => setStar(1))}>⭐</DropdownItem>
-                <DropdownItem onClick={(() => setStar(2))}>⭐⭐</DropdownItem>
-                <DropdownItem onClick={(() => setStar(3))}>⭐⭐⭐</DropdownItem>
-                <DropdownItem onClick={(() => setStar(4))}>⭐⭐⭐⭐</DropdownItem>
-                <DropdownItem onClick={(() => setStar(5))}>⭐⭐⭐⭐⭐</DropdownItem>
+                <DropdownItem onClick={(() => {setStar(0)
+                setPage(10)
+                })}>All</DropdownItem>
+                <DropdownItem onClick={(() => {setStar(1)
+                setPage(10)
+                })}>⭐</DropdownItem>
+                <DropdownItem onClick={(() => {setStar(2)
+                setPage(10)
+                })}>⭐⭐</DropdownItem>
+                <DropdownItem onClick={(() => {setStar(3)
+                setPage(10)
+                })}>⭐⭐⭐</DropdownItem>
+                <DropdownItem onClick={(() => {setStar(4)
+                setPage(10)
+                })}>⭐⭐⭐⭐</DropdownItem>
+                <DropdownItem onClick={(() => {setStar(5)
+                setPage(10)
+                })}>⭐⭐⭐⭐⭐</DropdownItem>
               </DropdownButton>
         <DropdownButton className="searchInput" id="dropdown-basic-button" title={"Sort by Release: " + (order == 0 ? "Newest" : "Oldest")}>
-                <DropdownItem onClick={(() => setOrder(0))}>Newest</DropdownItem>
-                <DropdownItem onClick={(() => setOrder(1))}>Oldest</DropdownItem>
+                <DropdownItem onClick={(() => {setOrder(0)
+                setPage(10)
+                })}>Newest</DropdownItem>
+                <DropdownItem onClick={(() => {setOrder(1)
+                setPage(10)
+                })}>Oldest</DropdownItem>
               </DropdownButton>
               <FormControl
               className="searchInput"
       placeholder="Group..."
       aria-label="Group..."
       aria-describedby="basic-addon1"
-      value={inputGroup} onInput={e => setInputGroup(e.target.value)}
+      value={inputGroup} onInput={e => {
+        setInputGroup(e.target.value)
+        setPage(10)}
+      } 
     />
               <FormControl
               className="searchInput"
       placeholder="Artist..."
       aria-label="Artist..."
       aria-describedby="basic-addon1"
-      value={inputArtist} onInput={e => setInputArtist(e.target.value)}
+      value={inputArtist} onInput={e => {
+        setInputArtist(e.target.value)
+        setPage(10)
+      }
+      }
     />
         </OffcanvasBody>
       </Offcanvas>
     <div>
-    <Cards raridade={star} ordem={order} pesquisa={inputArtist} grupo={inputGroup}/>
+    <Cards cardsPorPagina={page} onCardChange={setPage} raridade={star} ordem={order} pesquisa={inputArtist} grupo={inputGroup}/>
     </div>
   </div>
   </ThemeProvider>

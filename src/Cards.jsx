@@ -14,19 +14,17 @@ import Badge from 'react-bootstrap/Badge'
 
 import 'bootstrap/dist/css/bootstrap.min.css'
 
+
 function NewBadge(){
   return <Badge bg="danger" style={{marginRight: '3px', fontSize: '0.6rem'}}>NEW!</Badge>
 }
 
 function Cards(props) {
-  const [count, setCount] = useState(0)
-  const [noCards, setNoCards] = useState(false)
 
   let filtroRaridade = props.raridade
 
-  const filtrarRaridade = (cartas) => {
-    return (cartas => cartas.artista.toLowerCase().indexOf(props.pesquisa.toLowerCase()) > -1)
-  }
+  const tamanhoFiltro = listaCartas.filter(cartas => (filtroRaridade == 0 ? cartas.raridade > 0 : cartas.raridade == filtroRaridade)).filter(cartas => cartas.grupo.toLowerCase().indexOf(props.grupo.toLowerCase()) > -1).filter(cartas => cartas.artista.toLowerCase().indexOf(props.pesquisa.toLowerCase()) > -1).sort(function(a, b){return props.ordem == 0 ? b.id-a.id : b.id+a.id}).map(
+    (cartas) => (null)).length
 
     return (
       <ThemeProvider>
@@ -44,7 +42,9 @@ function Cards(props) {
             </Card.Body>
           </Card>
           )
-        )}
+        ).slice(0, props.cardsPorPagina)}
+        {(props.cardsPorPagina < tamanhoFiltro ? <Button onClick={() => props.onCardChange(props.cardsPorPagina + 10)} className="buttonCenter" variant="primary" >Load more... </Button> : null)
+        }
         </Row>
         </Container>
       </div>

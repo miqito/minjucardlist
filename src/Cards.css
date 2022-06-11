@@ -6,3 +6,9 @@
 .Card {
   margin: 1rem;
 }
+
+.buttonCenter{
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}

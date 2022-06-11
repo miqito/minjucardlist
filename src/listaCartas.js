@@ -924,7 +924,7 @@ var listaCartas = [
          new: false
      },
      {
-        id: 84, 
+        id: 85, 
         code : 'SOKS2',
          artista: "Kim Sejeong",
          grupo: "Soloist",
@@ -932,6 +932,72 @@ var listaCartas = [
          raridade: 2,
          release: "29/05/2022",
          link: 'https://cdn.koreaverse.com/Soloists/Original/KimSejeong-2-V1.png',
+         new: false
+     },
+     {
+        id: 86, 
+        code : 'VISI',
+         artista: "SinB",
+         grupo: "VIVIZ",
+         versao: 1,
+         raridade: 1,
+         release: "11/06/2022",
+         link: 'https://cdn.koreaverse.com/VIVIZ/Original/SinB-1-V1.png',
+         new: true
+     },
+     {
+        id: 87, 
+        code : 'VIEU',
+         artista: "Eunha",
+         grupo: "VIVIZ",
+         versao: 1,
+         raridade: 1,
+         release: "11/06/2022",
+         link: 'https://cdn.koreaverse.com/VIVIZ/Original/Eunha-1-V1.png',
+         new: true
+     },
+     {
+        id: 88, 
+        code : 'VIUM',
+         artista: "Umji",
+         grupo: "VIVIZ",
+         versao: 1,
+         raridade: 1,
+         release: "11/06/2022",
+         link: 'https://cdn.koreaverse.com/VIVIZ/Original/Umji-1-V1.png',
+         new: true
+     },
+     {
+        id: 89, 
+        code : 'SOZT',
+         artista: "Zion.T",
+         grupo: "Soloist",
+         versao: 1,
+         raridade: 1,
+         release: "11/06/2022",
+         link: 'https://cdn.koreaverse.com/Soloists/Original/Zion.T-1-V1.png',
+         new: true
+     },
+     {
+        id: 90, 
+        code : 'SOKN2',
+         artista: "Kim Namjoo",
+         grupo: "Soloist",
+         versao: 1,
+         raridade: 2,
+         release: "11/06/2022",
+         link: 'https://cdn.koreaverse.com/Soloists/Original/KimNamjoo-2-V1.png',
+         new: true
+     },
+     {
+        id: 91, 
+        code : 'SOLE2',
+         artista: "SOLE",
+         grupo: "Soloist",
+         versao: 1,
+         raridade: 2,
+         release: "11/06/2022",
+         link: 'https://cdn.koreaverse.com/Soloists/Original/SOLE-2-V1.png',
          new: true
      },
 ]
