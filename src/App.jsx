@@ -30,7 +30,7 @@ function App() {
   const [inputGroup, setInputGroup] = useState('')
   const [inputArtist, setInputArtist] = useState('');
   const searchInput = useRef(null)
-  const [page, setPage] = useState(10)
+  const [page, setPage] = useState(8)
 
 
   const [show, setShow] = useState(false);
@@ -73,30 +73,30 @@ function App() {
         <OffcanvasBody className="Offcanvas">
               <DropdownButton className="searchInput" id="dropdown-basic-button" title={"Filter by Rarity: " + (star == 0 ? "All" : "⭐".repeat(star))}>
                 <DropdownItem onClick={(() => {setStar(0)
-                setPage(10)
+                setPage(8)
                 })}>All</DropdownItem>
                 <DropdownItem onClick={(() => {setStar(1)
-                setPage(10)
+                setPage(8)
                 })}>⭐</DropdownItem>
                 <DropdownItem onClick={(() => {setStar(2)
-                setPage(10)
+                setPage(8)
                 })}>⭐⭐</DropdownItem>
                 <DropdownItem onClick={(() => {setStar(3)
-                setPage(10)
+                setPage(8)
                 })}>⭐⭐⭐</DropdownItem>
                 <DropdownItem onClick={(() => {setStar(4)
-                setPage(10)
+                setPage(8)
                 })}>⭐⭐⭐⭐</DropdownItem>
                 <DropdownItem onClick={(() => {setStar(5)
-                setPage(10)
+                setPage(8)
                 })}>⭐⭐⭐⭐⭐</DropdownItem>
               </DropdownButton>
         <DropdownButton className="searchInput" id="dropdown-basic-button" title={"Sort by Release: " + (order == 0 ? "Newest" : "Oldest")}>
                 <DropdownItem onClick={(() => {setOrder(0)
-                setPage(10)
+                setPage(8)
                 })}>Newest</DropdownItem>
                 <DropdownItem onClick={(() => {setOrder(1)
-                setPage(10)
+                setPage(8)
                 })}>Oldest</DropdownItem>
               </DropdownButton>
               <FormControl
@@ -106,7 +106,7 @@ function App() {
       aria-describedby="basic-addon1"
       value={inputGroup} onInput={e => {
         setInputGroup(e.target.value)
-        setPage(10)}
+        setPage(8)}
       } 
     />
               <FormControl
@@ -116,10 +116,18 @@ function App() {
       aria-describedby="basic-addon1"
       value={inputArtist} onInput={e => {
         setInputArtist(e.target.value)
-        setPage(10)
+        setPage(8)
       }
       }
     />
+      <Button className="searchInput" id="dropdown-basic-button" variant="primary" onClick={(()=> {
+        setStar(0)
+        setPage(8)
+        setInputArtist('')
+        setInputGroup('')
+      })}>
+        Clear filters
+      </Button>
         </OffcanvasBody>
       </Offcanvas>
     <div>

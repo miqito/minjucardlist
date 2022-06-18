@@ -943,7 +943,7 @@ var listaCartas = [
          raridade: 1,
          release: "11/06/2022",
          link: 'https://cdn.koreaverse.com/VIVIZ/Original/SinB-1-V1.png',
-         new: true
+         new: false
      },
      {
         id: 87, 
@@ -954,7 +954,7 @@ var listaCartas = [
          raridade: 1,
          release: "11/06/2022",
          link: 'https://cdn.koreaverse.com/VIVIZ/Original/Eunha-1-V1.png',
-         new: true
+         new: false
      },
      {
         id: 88, 
@@ -965,7 +965,7 @@ var listaCartas = [
          raridade: 1,
          release: "11/06/2022",
          link: 'https://cdn.koreaverse.com/VIVIZ/Original/Umji-1-V1.png',
-         new: true
+         new: false
      },
      {
         id: 89, 
@@ -976,7 +976,7 @@ var listaCartas = [
          raridade: 1,
          release: "11/06/2022",
          link: 'https://cdn.koreaverse.com/Soloists/Original/Zion.T-1-V1.png',
-         new: true
+         new: false
      },
      {
         id: 90, 
@@ -987,7 +987,7 @@ var listaCartas = [
          raridade: 2,
          release: "11/06/2022",
          link: 'https://cdn.koreaverse.com/Soloists/Original/KimNamjoo-2-V1.png',
-         new: true
+         new: false
      },
      {
         id: 91, 
@@ -998,6 +998,50 @@ var listaCartas = [
          raridade: 2,
          release: "11/06/2022",
          link: 'https://cdn.koreaverse.com/Soloists/Original/SOLE-2-V1.png',
+         new: false
+     },
+     {
+        id: 92, 
+        code : 'LXYCH',
+         artista: "Chuu",
+         grupo: "LOONA yyxy",
+         versao: 1,
+         raridade: 1,
+         release: "18/06/2022",
+         link: 'https://cdn.koreaverse.com/LOONAyyxy/Original/Chuu-1-V1.png',
+         new: true
+     },
+     {
+        id: 93, 
+        code : 'LXYGO',
+         artista: "Gowon",
+         grupo: "LOONA yyxy",
+         versao: 1,
+         raridade: 1,
+         release: "18/06/2022",
+         link: 'https://cdn.koreaverse.com/LOONAyyxy/Original/Gowon-1-V1.png',
+         new: true
+     },
+     {
+        id: 93, 
+        code : 'LXYOH',
+         artista: "Olivia Hye",
+         grupo: "LOONA yyxy",
+         versao: 1,
+         raridade: 1,
+         release: "18/06/2022",
+         link: 'https://cdn.koreaverse.com/LOONAyyxy/Original/OliviaHye-1-V1.png',
+         new: true
+     },
+     {
+        id: 93, 
+        code : 'LXYYV',
+         artista: "Yves",
+         grupo: "LOONA yyxy",
+         versao: 1,
+         raridade: 1,
+         release: "18/06/2022",
+         link: 'https://cdn.koreaverse.com/LOONAyyxy/Original/Yves-1-V1.png',
          new: true
      },
 ]

@@ -43,7 +43,7 @@ function Cards(props) {
           </Card>
           )
         ).slice(0, props.cardsPorPagina)}
-        {(props.cardsPorPagina < tamanhoFiltro ? <Button onClick={() => props.onCardChange(props.cardsPorPagina + 10)} className="buttonCenter" variant="primary" >Load more... </Button> : null)
+        {(props.cardsPorPagina < tamanhoFiltro ? <Button onClick={() => props.onCardChange(props.cardsPorPagina + 8)} className="buttonCenter" variant="primary" >Load more... </Button> : null)
         }
         </Row>
         </Container>
