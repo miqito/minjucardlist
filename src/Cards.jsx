@@ -34,7 +34,7 @@ function Cards(props) {
         <Row>
         {listaCartas.filter(cartas => (filtroRaridade == 0 ? cartas.raridade > 0 : cartas.raridade == filtroRaridade)).filter(cartas => cartas.grupo.toLowerCase().indexOf(props.grupo.toLowerCase()) > -1).filter(cartas => cartas.artista.toLowerCase().indexOf(props.pesquisa.toLowerCase()) > -1).sort(function(a, b){return props.ordem == 0 ? b.id-a.id : b.id+a.id}).map(
           (cartas) => (
-            <Card className="Card" text='white' style={{ width: '18rem', backgroundColor: '#36393f' }}>
+            <Card className="Card" text='white' style={{ width: '18rem', backgroundColor: props.isDark ? '#36393f' : '#3e1c3c' }}>
             <Card.Img variant="top" src={cartas.link} />
             <Card.Body>
               <Card.Title>{(cartas.new == true ? <NewBadge/> : null)}<strong>{cartas.grupo}</strong> {cartas.artista}</Card.Title>
@@ -43,7 +43,7 @@ function Cards(props) {
           </Card>
           )
         ).slice(0, props.cardsPorPagina)}
-        {(props.cardsPorPagina < tamanhoFiltro ? <Button onClick={() => props.onCardChange(props.cardsPorPagina + 8)} className="buttonCenter" variant="primary" >Load more... </Button> : null)
+        {(props.cardsPorPagina < tamanhoFiltro ? <Button onClick={() => props.onCardChange(props.cardsPorPagina + 8)} variant="dark" className={props.isDark ? "Button ButtonDarkMode" : "Button ButtonLightMode"} >Load more... </Button> : null)
         }
         </Row>
         </Container>

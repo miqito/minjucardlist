@@ -1,10 +1,68 @@
-.App {
+.AppDarkMode {
   background-color: #212121;
   display: grid;
   align-items: center;
   justify-content: center;
   min-width: 95vw;
 
+}
+
+.AppLightMode {
+  background-color: #e7c6e0;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  min-width: 95vw;
+
+}
+
+.HeaderDarkMode {
+  background-color: #212529;
+}
+
+.HeaderLightMode {
+  background-color: #f0d3ea;
+}
+
+.InputDarkMode {
+  background-color: #212121 !important;
+  color: #ffffff !important;
+}
+
+.InputLightMode {
+  background-color: #ffffff !important;
+  color: #212121 !important;
+}
+
+.Button {
+  margin: 2px;
+}
+
+.ButtonLightMode {
+  background-color: #3c1c3c !important;
+  color: #ffffff !important;
+}
+
+.ButtonDarkMode {
+  background-color: #e5c6e0 !important; 
+  color: #212529 !important
+}
+
+.DropdownText {
+  color: #ffffff !important;
+}
+
+.IconMode{
+  width: 20px;
+  height: 20;
+}
+
+.IconLightFill path{
+  fill: #e5c6e0
+}
+
+.IconDarkFill path{
+  fill: #3c1c3c
 }
 
 .App-logo {
