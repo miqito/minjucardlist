@@ -30,36 +30,43 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 
 
 function App() {
-  const [count, setCount] = useState(0)
   const [star, setStar] = useState(0)
   const [order, setOrder] = useState(0)
   const [inputGroup, setInputGroup] = useState('')
   const [inputArtist, setInputArtist] = useState('');
   const [page, setPage] = useState(8)
-  const [darkMode, setDarkMode] = useState(() => {
-    var saved;
-      saved = localStorage.getItem("lightmode");
-return saved
-  });
-
+  const [darkMode, setDarkMode] = useState([])
 
   const [show, setShow] = useState(false);
 
+  const item = localStorage.getItem('darkmode');
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
-
-  useEffect(() =>{
-    localStorage.setItem("lightmode", darkMode)
-  }, [darkMode])
+  
+  
+  useEffect(() => {
+    if (item == 'false') {
+      setDarkMode(false);
+    } 
+    if(item == 'true'){
+      setDarkMode(true)
+    }
+    if(!item) {
+      setDarkMode(false)
+    }
+  }, []); 
+  
+    useEffect(() => {
+      localStorage.setItem('darkmode', darkMode);
+    }, [darkMode]);
 
   const toggleDarkMode = () =>{
-    if(darkMode){
-      setDarkMode(false)
-      localStorage.setItem("lightmode", darkMode)
+    if(darkMode){  
+      setDarkMode(false)    
     } else {
       setDarkMode(true)
-      localStorage.setItem("lightmode", darkMode)
     }
+    localStorage.setItem("darkmode", darkMode)
   }
 
     

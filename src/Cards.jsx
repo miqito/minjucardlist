@@ -28,6 +28,9 @@ function Cards(props) {
 
     return (
       <ThemeProvider>
+        <style>
+@import url('https://fonts.googleapis.com/css2?family=Beth+Ellen&display=swap');
+</style>
       <div className="Cards">
         <Container fluid="sm">
           
@@ -48,6 +51,9 @@ function Cards(props) {
         </Row>
         </Container>
       </div>
+      <div>
+    <p className="Footer buttonCenter" style={{color: props.isDark ?  '#e5c6e0' : '#3c1c3c'}}>it's 11:11</p>
+  </div>
       </ThemeProvider>
     )
 
