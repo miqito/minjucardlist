@@ -1009,7 +1009,7 @@ var listaCartas = [
          raridade: 1,
          release: "18/06/2022",
          link: 'https://cdn.koreaverse.com/LOONAyyxy/Original/Chuu-1-V1.png',
-         new: true
+         new: false
      },
      {
         id: 93, 
@@ -1020,10 +1020,10 @@ var listaCartas = [
          raridade: 1,
          release: "18/06/2022",
          link: 'https://cdn.koreaverse.com/LOONAyyxy/Original/Gowon-1-V1.png',
-         new: true
+         new: false
      },
      {
-        id: 93, 
+        id: 94, 
         code : 'LXYOH',
          artista: "Olivia Hye",
          grupo: "LOONA yyxy",
@@ -1031,10 +1031,10 @@ var listaCartas = [
          raridade: 1,
          release: "18/06/2022",
          link: 'https://cdn.koreaverse.com/LOONAyyxy/Original/OliviaHye-1-V1.png',
-         new: true
+         new: false
      },
      {
-        id: 93, 
+        id: 95, 
         code : 'LXYYV',
          artista: "Yves",
          grupo: "LOONA yyxy",
@@ -1042,6 +1042,50 @@ var listaCartas = [
          raridade: 1,
          release: "18/06/2022",
          link: 'https://cdn.koreaverse.com/LOONAyyxy/Original/Yves-1-V1.png',
+         new: false
+     },
+     {
+        id: 96, 
+        code : '2N2BO4',
+         artista: "Bom",
+         grupo: "2NE1",
+         versao: 2,
+         raridade: 4,
+         release: "01/07/2022",
+         link: 'https://cdn.koreaverse.com/2NE1/Original/Bom-4-V2.gif',
+         new: true
+     },
+     {
+        id: 97, 
+        code : '2N2CL4',
+         artista: "CL",
+         grupo: "2NE1",
+         versao: 2,
+         raridade: 4,
+         release: "01/07/2022",
+         link: 'https://cdn.koreaverse.com/2NE1/Original/CL-4-V2.gif',
+         new: true
+     },
+     {
+        id: 98, 
+        code : '2N2DR4',
+         artista: "Dara",
+         grupo: "2NE1",
+         versao: 2,
+         raridade: 4,
+         release: "01/07/2022",
+         link: 'https://cdn.koreaverse.com/2NE1/Original/Dara-4-V2.gif',
+         new: true
+     },
+     {
+        id: 99, 
+        code : '2N2MI4',
+         artista: "Minzy",
+         grupo: "2NE1",
+         versao: 2,
+         raridade: 4,
+         release: "01/07/2022",
+         link: 'https://cdn.koreaverse.com/2NE1/Original/Minzy-4-V2.gif',
          new: true
      },
 ]
